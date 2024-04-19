@@ -58,11 +58,12 @@ p {
 }
 
 .container {
-    max-width: 1170px;
+    margin: 0 auto;
 }
 
 .hero__container {
     min-width: 100%;
+    max-width: 1170px;
 }
 
 .header {}
@@ -107,7 +108,11 @@ p {
     text-align: center;
 }
 
-.hero__btn-wrap {}
+.hero__btn-wrap {
+    display: flex;
+    justify-content: center;
+    padding-top: 390px;
+}
 
 .hero__btn {
     box-shadow: 0 0 0 4px #fee4e2, 0 1px 2px 0 rgba(16, 24, 40, 0.05);
@@ -121,4 +126,88 @@ p {
     font-size: 24px;
     color: #fff;
 
+}
+
+.places {
+    background: url(../img/mount.png) no-repeat center;
+    background-size: cover;
+    height: 960px;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.places__container {
+    max-width: 1357px;
+}
+
+.places__title-wrap {}
+
+.places__title {
+
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 135px;
+    margin-bottom: 65px;
+}
+
+.places__card {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.card {
+    background: rgba(88, 88, 88, 0.5);
+    width: 320px;
+    height: 586px;
+}
+
+.card__img-wrap {
+
+    width: 272px;
+    height: 252px;
+}
+
+.card__img {
+    border-radius: 8px;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+.card__info {
+    margin-left: 25px;
+}
+
+.card__subtitle {
+    font-weight: 500;
+    font-size: 32px;
+    margin-bottom: 15px;
+    margin-top: 45px;
+    font-family: var(--font-family);
+}
+
+.card__desc {
+    font-weight: 300;
+    font-size: 16px;
+    width: 225px;
+    font-family: var(--font-family);
+    word-spacing: 3px;
+}
+
+.card__lien-wrap {
+    background: rgba(88, 88, 88, 0.26);
+    width: 100px;
+    height: 30px;
+    text-align: center;
+
+}
+
+.card__lien {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 233%;
 }
